@@ -19,11 +19,24 @@ int main()
     arr1.change(2,10);
     arr2.add(7);
     arr2.change(2, 10);
+    cout << "\nMean: " << arr1.getMean()
+        << "\nMax: " << arr1.getMax()
+        << "\nMin: " << arr1.getMin() << endl;
+
+    SuperIntArray copy = arr1;
+
     
 
-   cout << "\nMean: " << arr1.getMean()
-        << "\nMax: " << arr1.getMax()
-        << "\nMin: " << arr1.getMin() << "\n";
 
-   
+    cout << arr1.getNums(0) << arr1.getNums(1)
+        << arr1.getNums(2) <<
+        arr1.getNums(3) << arr1.getNums(4) <<
+        arr1.getNums(5) <<
+        arr1.getNums(6) << endl; 
+
+    cout << copy.getNums(0) << copy.getNums(1)
+        << copy.getNums(2) <<
+        copy.getNums(3) << copy.getNums(4) <<
+        copy.getNums(5) <<
+        copy.getNums(6) << endl;
 }

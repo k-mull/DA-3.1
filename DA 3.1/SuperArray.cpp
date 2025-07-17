@@ -141,4 +141,13 @@ int SuperIntArray::getMax(int nums[], int size)
 		 sum += nums[i];
 	 return static_cast<double>(sum) / size;
  }
-
+ SuperIntArray::SuperIntArray(const SuperIntArray& other)
+ {
+	 numberOfNums = other.numberOfNums;
+	 nums = new int[numberOfNums];
+	 for (int i = 0; i < numberOfNums; i++)
+	 {
+		 nums[i] = other.nums[i];
+	 }
+ }
+ 

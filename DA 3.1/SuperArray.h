@@ -7,6 +7,7 @@ class SuperIntArray
 private:
 	int* nums;
 	int numberOfNums;
+	
 public:
 	SuperIntArray(int nums [], int size);
 	SuperIntArray(int nums);
@@ -30,5 +31,8 @@ public:
 	static int getMin(int nums[], int size);
 	static int getMean(int nums[], int size);
 
+	
+	SuperIntArray(const SuperIntArray& other);
+	
 };
 #endif
